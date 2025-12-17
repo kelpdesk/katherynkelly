@@ -6,7 +6,7 @@
   --bg-deep: #020a13;            /* even deeper blue */
   --contrast: #4b5a66;           /* cool slate */
   --accent-1: #2ec4b6;           /* light sea green */
-  --accent-2: #7fd4ff;           /* soft ocean blue (replaces yellow) */
+  --accent-2: #7fd4ff;           /* soft ocean blue */
   --accent-3: #ff6666;           /* bittersweet coral */
   --text: #fdf0d5;               /* warm neutral, still works on blue */
 }
@@ -72,7 +72,8 @@ section {
 
 h1, h2, h3 {
   font-family: 'Bubblegum Sans', cursive;
-  color: var(--accent-2);
+  color: var(--accent-1); 
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
 
 a {
@@ -119,8 +120,9 @@ header.shrink .desktop-nav a {
 .site-title {
   font-family: 'Birthstone', cursive;
   font-size: 2.1rem;
-  color: var(--accent-2);
+  color: var(--accent-1);
   letter-spacing: 0.04em;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
 
 .desktop-nav a {
@@ -243,13 +245,13 @@ header.shrink .desktop-nav a {
 }
 
 .button-outline {
-  border: 2px solid var(--accent-2);
-  color: var(--accent-2);
+  border: 2px solid var(--accent-1);
+  color: var(--accent-1);
   background: transparent;
 }
 
 .button-secondary {
-  background: var(--accent-2);
+  background: var(--accent-1);
   color: #041322;
   box-shadow: 0 8px 18px rgba(127, 212, 255, 0.35);
 }
@@ -301,15 +303,15 @@ header.shrink .desktop-nav a {
 }
 
 .social-icon-inner {
-  fill: var(--accent-2);
+  fill: var(--accent-1);
 }
 
 .social-icon-dot {
-  fill: var(--accent-2);
+  fill: var(--accent-1);
 }
 
 .social-icon-text {
-  fill: var(--accent-2);
+  fill: var(--accent-1);
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   font-size: 20px;
 }
@@ -339,7 +341,7 @@ header.shrink .desktop-nav a {
 }
 
 .social-link:hover span {
-  color: var(--accent-2);
+  color: var(--accent-1);
 }
 
 /* ===============================
@@ -439,7 +441,7 @@ footer .back-to-top {
 
 footer .back-to-top:hover {
   opacity: 1;
-  color: var(--accent-2);
+  color: var(--accent-1);
 }
 
 /* ===============================
@@ -465,5 +467,83 @@ footer .back-to-top:hover {
 
   .content-section {
     padding: 1.5rem 1.4rem;
+  }
+}
+
+/* ===============================
+   IMAGE & LAYOUT UPDATES
+=============================== */
+
+/* HERO LAYOUT */
+.hero-content {
+  display: flex;
+  flex-direction: column-reverse; /* Text below image on mobile */
+  align-items: center;
+  gap: 2rem;
+}
+
+.hero-image-container {
+  flex-shrink: 0;
+}
+
+.hero-img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover; /* Ensures image doesn't stretch */
+  border-radius: 50%; /* Makes it a circle */
+  border: 4px solid var(--accent-1);
+  box-shadow: 0 0 25px rgba(46, 196, 182, 0.3);
+}
+
+/* DESKTOP HERO TWEAKS */
+@media (min-width: 768px) {
+  .hero-content {
+    flex-direction: row; /* Side-by-side on desktop */
+    justify-content: space-between;
+    text-align: left;
+  }
+  
+  .hero-text {
+    max-width: 65%;
+  }
+
+  .hero-img {
+    width: 240px;
+    height: 240px;
+  }
+}
+
+/* RESUME LAYOUT */
+.resume-intro-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 2.5rem;
+  align-items: center;
+}
+
+.resume-img {
+  width: 100%;
+  max-width: 280px;
+  height: auto;
+  border-radius: 12px; /* Soft corners */
+  border: 1px solid rgba(127, 212, 255, 0.3);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+/* DESKTOP RESUME TWEAKS */
+@media (min-width: 768px) {
+  .resume-intro-container {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  
+  .resume-intro-text {
+    flex: 1;
+  }
+
+  .resume-image-wrapper {
+    flex-shrink: 0;
+    margin-top: -10px; /* Slight visual alignment fix */
   }
 }
