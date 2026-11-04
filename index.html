@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Katheryn Kelly — Personal Portfolio</title>
     
-    <!-- Google Fonts: Birthstone for main header, Roboto for clean, readable body text -->
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Birthstone&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Birthstone&family=Bubblegum+Sans&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
     
-    <!-- Tailwind CSS CDN -->
+    <!-- Tailwind -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -31,6 +31,7 @@
                         header: ['Birthstone', 'cursive'],
                         body: ['Roboto', 'sans-serif'],
                         mono: ['Roboto Mono', 'monospace'],
+                        bubblegum: ['Bubblegum Sans', 'cursive'],
                     }
                 }
             }
@@ -50,7 +51,6 @@
             line-height: 1.75;
         }
 
-        /* Distinctive Birthstone Header for Katheryn Kelly */
         .brand-header-title {
             font-family: 'Birthstone', cursive;
             color: #C8756C;
@@ -59,7 +59,6 @@
             font-weight: 400;
         }
 
-        /* Subtle section container cards with ocean-tint and soft border */
         .story-card {
             background-color: #ffffff;
             border: 1px solid rgba(104, 160, 152, 0.25);
@@ -80,7 +79,6 @@
             letter-spacing: -0.01em;
         }
 
-        /* Clean Scrollbar */
         ::-webkit-scrollbar {
             width: 8px;
         }
@@ -95,16 +93,14 @@
 </head>
 <body class="min-h-screen flex flex-col justify-between selection:bg-coral-dust selection:text-white">
 
-    <!-- TOP MINIMAL NAVIGATION BAR -->
+    <!-- NAVIGATION -->
     <header class="w-full bg-[#FAF8F5]/90 backdrop-blur-md sticky top-0 z-40 border-b border-jade-water/20">
         <div class="max-w-[820px] mx-auto px-6 h-16 flex items-center justify-between">
             <a href="#top" class="font-header text-3xl text-coral-rose hover:text-coral-dust transition-colors">
                 Katheryn Kelly
             </a>
-            <nav class="flex items-center space-x-5 text-xs font-mono text-reef-dark">
-                <a href="#story" class="hover:text-coral-rose transition-colors">Story</a>
-                <a href="#trust" class="hover:text-coral-rose transition-colors">Trust &amp; Safety</a>
-                <a href="#academics" class="hover:text-coral-rose transition-colors">Vision</a>
+            <nav class="flex items-center space-x-5 text-s font-bubblegum text-reef-dark">
+                <a href="https://www.kelpdesk.org" class="hover:text-coral-rose transition-colors">KelpDesk</a>
                 <a href="https://www.katherynkelly.com/ladyofsuccess.html" class="px-3 py-1.5 rounded-full bg-coral-rose text-white hover:bg-coral-dust transition-colors">Lady of Success</a>
             </nav>
         </div>
@@ -123,7 +119,7 @@
                         <img src="https://katherynkelly.com/pic.jpeg" 
                              alt="Katheryn Kelly" 
                              class="w-40 h-48 sm:w-48 sm:h-56 object-cover rounded-2xl border-2 border-coral-dust/60 shadow-md"
-                             onerror="this.onerror=null; this.src='https://KatherynKelly.com/pic.jpeg';">
+                             onerror="this.onerror=null; this.src='https//KatherynKelly.com/pic.jpeg';">
                         <div class="absolute -bottom-2 -right-2 bg-sandlight text-reef-dark text-[11px] font-mono px-2.5 py-1 rounded-full font-medium border border-jade-water/40 shadow-sm">
                             San Diego, CA
                         </div>
@@ -134,151 +130,51 @@
                 <div class="text-center sm:text-left space-y-3">
                     <div>
                         <h1 class="brand-header-title">Katheryn Kelly</h1>
-                        <p class="text-sm font-medium text-jade-water tracking-wide">
-                            Technologist, Data Science Student &amp; Digital Trust &amp; Safety Professional
+                        <p class="text-lg font-medium font-bubblegum text-jade-water tracking-wide">
+                            Current Data Science Student at ASU <br> 10+ Years of Experience in IT <br> including 5+ Years in Digital Trust &amp; Safety
                         </p>
                     </div>
 
-                    <p class="text-sm text-dark-charcoal/90 leading-relaxed">
-                        Dedicated to creating safe, transparent, and resilient online communities. Grounded in data analytical rigor and deep environmental stewardship, my work bridges technology with authentic human trust.
-                    </p>
+                   <!-- <p class="text-sm text-dark-charcoal/90 leading-relaxed">
+                        Dedicated to creating safe, ethical, and resilient online communities. My work bridges technology with authentic human trust.
+                    </p>-->
                 </div>
 
             </div>
-        </section>
-
-        <!-- SECTION 1: EARLY LIFE & OCEAN ROOTS -->
-        <section id="story" class="story-card space-y-3 scroll-mt-24">
-            <div class="flex items-center justify-between border-b border-jade-water/20 pb-2">
-                <h2 class="flex items-center gap-2">
-                    <span class="text-coral-rose">🌊</span> Coastal Beginnings &amp; Ocean Roots
-                </h2>
-                <span class="text-xs font-mono text-jade-water">Pacific Coast</span>
-            </div>
-            <p class="text-sm text-dark-charcoal/90">
-                Beach life was central to my upbringing along the north county coastlines of San Diego, California. I was swimming before I could walk, and my dad pushed me into waves to surf until I learned to paddle out on my own.
-            </p>
-            <p class="text-sm text-dark-charcoal/90">
-                Our family regularly picnicked at La Jolla Cove, listening to the Big Band and exploring tidepools teeming with sea life. Joining Junior Lifeguards taught me to read tides, swells, and currents while running safety drills and cultivating lifelong discipline.
-            </p>
-        </section>
-
-        <!-- SECTION 2: TECHNICAL APTITUDE & CURIOSITY -->
-        <section class="story-card space-y-3">
-            <div class="flex items-center justify-between border-b border-jade-water/20 pb-2">
-                <h2 class="flex items-center gap-2">
-                    <span class="text-coral-rose">🖥️</span> Technical Aptitude &amp; Early Web Craft
-                </h2>
-                <span class="text-xs font-mono text-jade-water">Self-Taught Roots</span>
-            </div>
-            <p class="text-sm text-dark-charcoal/90">
-                My technical roots run as deep as my love for the ocean. My use of the computer started right alongside development of literacy. In elementary school, I excelled in our computer lab, guided by typing lessons and educational games. By middle school, I had started creating my own fantasy art, superimposing butterfly wings onto fashion models to make fairies. I built my first website to share these creations and joined a network of fairy-themed sites. I launched a Harry Potter role play game to share magical endeavors with other enthusiasts. This creative pursuit introduced me to HTML, CSS, JavaScript, and allowed me to further my interest in graphic design.
-            </p>
-            <p class="text-sm text-dark-charcoal/90">
-                In high school, I took a computer applications class that covered the Microsoft Office Suite, including Word, Excel, PowerPoint, Outlook, and Access. I also enjoyed my studies in my C++ computer programming course. 
-            </p>
-        </section>
-
-        <!-- SECTION 3: INTO THE WILD & STEWARDSHIP -->
-        <section class="story-card space-y-3">
-            <div class="flex items-center justify-between border-b border-jade-water/20 pb-2">
-                <h2 class="flex items-center gap-2">
-                    <span class="text-coral-rose">🌲</span> Wilderness &amp; Ecological Stewardship
-                </h2>
-                <span class="text-xs font-mono text-jade-water">38 States Traversed</span>
-            </div>
-            <p class="text-sm text-dark-charcoal/90">
-                After graduation, I spent several years backpacking and exploring bioregions across thirty-eight U.S. states. From the wetlands of the South to the old-growth forests of the Pacific Northwest, these natural systems deepened my respect for environmental equilibrium.
-            </p>
-            <p class="text-sm text-dark-charcoal/90">
-                While contributing to a community Victory Garden in Eugene, Oregon, I was introduced to permaculture. Inspired by nature as a teacher, I learned about closed-loop ecological regeneration. I joined the California Conservation Corps in San Diego where I worked throughout the county on park maintenance projects, including arborism. I also worked in wildland firefighting, trail maintenance, and fuel reduction under U.S. Forest Service direction.
-            </p>
         </section>
 
         <!-- SECTION 4: DIGITAL TRUST & SAFETY -->
         <section id="trust" class="story-card space-y-3 border-l-4 border-l-coral-rose scroll-mt-24">
             <div class="flex items-center justify-between border-b border-jade-water/20 pb-2">
-                <h2 class="flex items-center gap-2">
+                <h2 class="flex items-center gap-2 font-bubblegum text-lg font-medium">
                     <span class="text-coral-rose">🛡️</span> IT Career Journey
                 </h2>
-                <span class="text-xs font-mono text-jade-water">(2015–2025)</span>
+                <span class="text-xs font-mono text-jade-water">2015–2025</span>
             </div>
             <p class="text-sm text-dark-charcoal/90">
-                Pivoting back to technology, I began working temporary assignments before landing my first full-time role in Jenny Craig's IT department in 2015.  I was responsible for troubleshooting and resolving technical issues.
+                I began working temporary assignments before landing my first full-time role from temp role in Jenny Craig's IT department in 2015. During over three years, I advanced from the Jenny Care team to Systems Support Analyst II where I handled escalated issues, and documented procedures for the internal knowledge base.
             </p>
             <p class="text-sm text-dark-charcoal/90">
-                I joined <strong>101domain</strong> in 2018, advancing through customer support and fulfillment to become their <strong>Trust &amp; Safety Administrator</strong>. Over a seven-year tenure, I built 101domain’s entire Trust &amp; Safety infrastructure from the ground up.
-            </p>
-            <p class="text-sm text-dark-charcoal/90">
-                By connecting signals across DNS records, OSINT intelligence, payment gateways, and user behavior patterns, I deployed abuse-response workflows and GDPR/OFAC compliance systems that reduced dollars disputed as filed chargebacks by over <strong>60%</strong> each year, two years in a row.
+                I joined <strong>101domain</strong> in 2018, advancing through customer support and fulfillment to become their <strong>Trust &amp; Safety Administrator</strong>. I developed, documented, and implemented standard operating procedures for Identify Verification, Account Security, Account Takeover, OFAC Screening, Fraud Assessments, as well as Compliance with ICANN'S abuse policies. I also chaired the internal social team and events.
             </p>
 
-            <div class="mt-4 pt-3 border-t border-jade-water/20 grid grid-cols-2 sm:grid-cols-4 gap-2 text-center text-xs font-mono text-reef-dark">
-                <div class="p-2 bg-ocean-tint rounded-lg">OSINT Analysis</div>
-                <div class="p-2 bg-ocean-tint rounded-lg">DNS &amp; Domain Abuse</div>
-                <div class="p-2 bg-ocean-tint rounded-lg">60% Fraud Reduction</div>
-                <div class="p-2 bg-ocean-tint rounded-lg">Legal &amp; GDPR Compliance</div>
-            </div>
-        </section>
-
-        <!-- SECTION 5: MOBILE & CONNECTED LIVING -->
-        <section class="story-card space-y-3">
-            <div class="flex items-center justify-between border-b border-jade-water/20 pb-2">
-                <h2 class="flex items-center gap-2">
-                    <span class="text-coral-rose">🚐</span> Mobile &amp; Connected Living
-                </h2>
-                <span class="text-xs font-mono text-jade-water">Starlink &amp; Solar</span>
-            </div>
-            <p class="text-sm text-dark-charcoal/90">
-                In 2022, I converted a Roadtrek Versatile 170 campervan into a solar-powered, Starlink-connected mobile office.
-            </p>
-            <p class="text-sm text-dark-charcoal/90">
-                Traveling alongside my border collie, <strong>Tada</strong>, this setup balances rigorous analytical computer work with regular outdoor time, hiking, and time in nature—serving as proof-of-concept for digital-first stewardship.
-            </p>
         </section>
 
         <!-- SECTION 6: ACADEMIC PURSUITS & FUTURE VISION -->
-        <section id="academics" class="story-card space-y-3 scroll-mt-24">
+        <section id="academics" class="story-card space-y-3 scroll-mt-24 text-lg font-medium">
             <div class="flex items-center justify-between border-b border-jade-water/20 pb-2">
-                <h2 class="flex items-center gap-2">
-                    <span class="text-coral-rose">🧠</span> Academic Pursuits &amp; Future Vision
+                <h2 class="flex items-center gap-2 font-bubblegum">
+                    <span class="text-coral-rose">🧠</span> Academic Pursuits
                 </h2>
-                <span class="text-xs font-mono text-jade-water">ASU Data Science</span>
+                <span class="text-xs font-mono text-jade-water">2026-current</span>
             </div>
             <p class="text-sm text-dark-charcoal/90">
-                I am currently a full-time student at <strong>Arizona State University Online</strong>, pursuing a Bachelor’s degree in <strong>Data Science</strong>. Coursework includes Data Wrangling with Python &amp; SQL, Java Object-Oriented Programming, Data Structures, Agentic AI, and Environmental Studies.
+                I am currently a full-time student at <strong>Arizona State University Online</strong>, pursuing a Bachelor’s degree in <strong>Data Science</strong>. Coursework highlights includes Data Wrangling with Python &amp; SQL, Object-Oriented Programming, Data Structures, Agentic AI, and Environmental Studies.
             </p>
             <p class="text-sm text-dark-charcoal/90">
-                My career vision focuses on <strong>Ethical Tech and Digital Trust &amp; Safety</strong>—building healthy online spaces where logic, ethics, and human safety align.
+                My career vision focuses on <strong>Ethical Tech</strong> led by data-backed decision-making and human safety alignment.
             </p>
         </section>
-
-        <!-- SIMPLE & SLEEK CONTACT SECTION
-        <section id="connect" class="story-card bg-ocean-tint/60 space-y-4 scroll-mt-24">
-            <div class="text-center space-y-1">
-                <h2 class="text-2xl font-header text-coral-rose text-3xl">Let's Connect</h2>
-                <p class="text-xs font-mono text-jade-water">Inquiries • Data Science • Trust &amp; Safety Collaborations</p>
-            </div>
-
-            <form id="contactForm" class="space-y-3 max-w-md mx-auto pt-2">
-                <div>
-                    <input type="text" required placeholder="Your Name" class="w-full px-3 py-2 rounded-xl border border-jade-water/40 text-xs bg-white focus:outline-none focus:border-coral-rose">
-                </div>
-                <div>
-                    <input type="email" required placeholder="Your Email" class="w-full px-3 py-2 rounded-xl border border-jade-water/40 text-xs bg-white focus:outline-none focus:border-coral-rose">
-                </div>
-                <div>
-                    <textarea rows="3" required placeholder="Your Message..." class="w-full px-3 py-2 rounded-xl border border-jade-water/40 text-xs bg-white focus:outline-none focus:border-coral-rose"></textarea>
-                </div>
-                <button type="submit" class="w-full py-2 rounded-xl bg-coral-rose text-white text-xs font-mono font-medium hover:bg-coral-dust transition-colors shadow-sm">
-                    Send Message 🌊
-                </button>
-            </form>
-
-            <div id="formConfirmation" class="hidden text-center text-xs text-reef-dark font-mono bg-sandlight/60 p-3 rounded-xl border border-jade-water/30">
-                ✨ Message sent warmly! Katheryn will reply soon.
-            </div>
-        </section> -->
 
     </main>
 
