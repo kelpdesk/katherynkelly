@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lady of Success: A Guide to Metamorphosis — Katheryn Kelly</title>
+    
+    <!-- Google Fonts Integration -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Birthstone&family=Bubblegum+Sans&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400&family=Roboto+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'coral-rose': '#C8756C',
+                        'coral-dust': '#D8A8A0',
+                        'deep-sea': '#408080',
+                        'jade-water': '#68A098',
+                        'sandlight': '#F8D8B0',
+                        'ocean-mist': '#A0B0A8',
+                        'reef-dark': '#386868',
+                        'light-cream': '#F8F0D8',
+                        'dark-charcoal': '#404040',
+                        'ocean-tint': '#F1F5F4',
+                    },
+                    fontFamily: {
+                        birthstone: ['Birthstone', 'cursive'],
+                        bubblegum: ['"Bubblegum Sans"', 'cursive'],
+                        body: ['Roboto', 'sans-serif'],
+                        mono: ['"Roboto Mono"', 'monospace'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 6.5rem;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #FAF8F5;
+            color: #404040;
+            line-height: 1.75;
+        }
+
+        /* Script Title Styling */
+        .brand-header-title {
+            font-family: 'Birthstone', cursive;
+            color: #C8756C;
+            font-size: clamp(3.2rem, 7vw, 4.5rem);
+            line-height: 1.05;
+            font-weight: 400;
+        }
+
+        .secondary-heading {
+            font-family: 'Bubblegum Sans', cursive;
+            color: #386868;
+            letter-spacing: 0.02em;
+        }
+
+        /* Clean Story Card Containers */
+        .story-card {
+            background-color: #ffffff;
+            border: 1px solid rgba(104, 160, 152, 0.25);
+            border-radius: 16px;
+            padding: 2rem;
+            transition: border-color 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .story-card:hover {
+            border-color: rgba(64, 128, 128, 0.4);
+            box-shadow: 0 4px 20px -2px rgba(56, 104, 104, 0.06);
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #FAF8F5;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #68A098;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col justify-between selection:bg-coral-dust selection:text-white">
+
+    <!-- STICKY TOP NAVIGATION BAR -->
+    <header class="w-full bg-[#FAF8F5]/90 backdrop-blur-md sticky top-0 z-50 border-b border-jade-water/20">
+        <div class="max-w-[820px] mx-auto px-6 h-16 flex items-center justify-between">
+            <a href="https://www.katherynkelly.com/index.html" class="font-birthstone text-3xl sm:text-4xl text-coral-rose hover:text-coral-dust transition-colors">
+                Katheryn Kelly
+            </a>
+            <nav class="hidden sm:flex items-center space-x-4 text-xs font-mono text-reef-dark">
+                <a href="#metamorphosis" class="hover:text-coral-rose transition-colors">Metamorphosis</a>
+                <a href="#disempowerment" class="hover:text-coral-rose transition-colors">Disempowerment</a>
+                <a href="#empowerment" class="hover:text-coral-rose transition-colors">Empowerment</a>
+                <a href="#cheat-codes" class="hover:text-coral-rose transition-colors">Cheat Codes</a>
+                <a href="#resources" class="hover:text-coral-rose transition-colors">Resources</a>
+            </nav>
+            <!-- Mobile Menu Dropdown -->
+            <a href="#cheat-codes" class="sm:hidden text-xs font-mono px-3 py-1.5 rounded-full bg-coral-rose text-white">
+                Cheat Codes
+            </a>
+        </div>
+    </header>
+
+    <!-- MAIN CENTERED CONTENT CONTAINER (MAX 820px) -->
+    <main id="top" class="max-w-[820px] w-full mx-auto px-6 py-8 space-y-10 flex-grow">
+
+        <!-- HERO SECTION: LADY OF SUCCESS INTRODUCTION -->
+        <section id="metamorphosis" class="story-card bg-gradient-to-br from-white via-white to-ocean-tint/60 relative overflow-hidden scroll-mt-24">
+            
+            <!-- Hero Header Banner Image -->
+            <div class="relative w-full h-48 sm:h-64 rounded-xl overflow-hidden mb-6 border border-jade-water/20 shadow-sm">
+                <img src="jeremy-bishop-160882-unsplash.jpg" 
+                     alt="Sunlit Sea Turtle Swimming in Deep Sea Water by Jeremy Bishop" 
+                     class="w-full h-full object-cover object-center"
+                     onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1544551763-46a013bb70d5?q=80&w=1200&auto=format&fit=crop';">
+                <div class="absolute inset-0 bg-gradient-to-t from-reef-dark/80 via-reef-dark/30 to-transparent flex items-end p-5">
+                    <div class="text-white space-y-1">
+                        <span class="text-[10px] font-mono uppercase tracking-widest bg-sandlight/20 backdrop-blur-md px-2.5 py-1 rounded-md border border-light-cream/30">
+                            Self-Improvement Project • 10-Year Evolution
+                        </span>
+                        <p class="text-xs font-body opacity-90">Rising from distress into direct, calm, and sovereign agency.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Main Title Block -->
+            <div class="space-y-3">
+                <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-2 border-b border-jade-water/20 pb-3">
+                    <div>
+                        <h1 class="brand-header-title">Lady of Success</h1>
+                        <p class="secondary-heading text-xl text-deep-sea">A Guide to Metamorphosis</p>
+                    </div>
+                    <div class="text-left sm:text-right text-[11px] font-mono text-jade-water space-y-0.5">
+                        <p class="font-medium text-reef-dark">Katheryn "Kelly" Bush</p>
+                        <p>ASU • AME 111: Intro to Digital Culture</p>
+                        <p>Dr. Jennifer Weiler • Module 2</p>
+                    </div>
+                </div>
+
+                <!-- Intro Prose -->
+                <p class="text-sm text-dark-charcoal leading-relaxed pt-2">
+                    For the past ten years, I have been actively living a personal self-improvement endeavor I call the <strong>"Lady of Success."</strong> It is a conscious gift I gave myself to permanently rise out of the passive-aggressive <em>"Damsel in Distress"</em> trope and step into authentic, self-determined sovereignty.
+                </p>
+
+                <!-- Creative Commons Artwork Feature -->
+                <div class="my-6 p-4 rounded-xl bg-ocean-tint/80 border border-jade-water/30 flex flex-col sm:flex-row items-center gap-6">
+                    <div class="w-full sm:w-48 flex-shrink-0">
+                        <img src="drawing.png" 
+                             alt="She Rises Illustration by Katheryn Bush" 
+                             class="w-full h-auto rounded-lg border border-coral-dust/50 bg-[#68A098]/10 p-2 shadow-sm"
+                             onerror="this.onerror=null; this.src='https://placehold.co/400x400/68A098/FAF8F5?text=She+Rises+Artwork';">
+                    </div>
+                    <div class="space-y-2 text-xs">
+                        <div class="inline-block px-2 py-0.5 rounded bg-sandlight text-reef-dark font-mono font-medium text-[10px]">
+                            Featured CC0 Contribution
+                        </div>
+                        <h3 class="font-bold text-reef-dark text-sm">"She Rises" Silhouette Metamorphosis</h3>
+                        <p class="text-dark-charcoal/90">
+                            Visualizing the physical trajectory of transformation: shifting from the collapsed, kneeling posture of the overextended victim into the upright, buoyant presence of a sovereign creator.
+                        </p>
+                        <p class="font-mono text-[11px] text-jade-water">
+                            Creative Commons (TASL): Marked with CC0 1.0 Universal.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 1: RELATING DAMSEL IN DISTRESS TO DISEMPOWERMENT -->
+        <section id="disempowerment" class="story-card space-y-6 scroll-mt-24 border-l-4 border-l-coral-dust">
+            <div class="border-b border-jade-water/20 pb-2 flex items-center justify-between">
+                <div>
+                    <span class="text-xs font-mono uppercase tracking-wider text-coral-rose">Part I • The Pattern</span>
+                    <h2 class="secondary-heading text-2xl">Relating Damsel in Distress to Disempowerment</h2>
+                </div>
+                <span class="px-2.5 py-1 rounded-full bg-coral-dust/20 text-coral-rose text-xs font-mono font-medium">
+                    Passive-Aggressive
+                </span>
+            </div>
+
+            <p class="text-sm text-dark-charcoal leading-relaxed">
+                The <em>Damsel in Distress</em> archetype relies on indirectness, unconscious transactional expectations, and emotional reactivity. When we inhabit this state, our behavior rotates through three primary disempowered roles, each harboring a covert emotional payoff:
+            </p>
+
+            <!-- 3 Roles Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 text-xs">
+                
+                <!-- Subservience -->
+                <div class="p-4 rounded-xl bg-ocean-tint/50 border border-jade-water/20 space-y-2">
+                    <div class="flex items-center justify-between">
+                        <span class="font-mono text-reef-dark font-bold text-sm">1. Subservience</span>
+                        <span class="text-lg">🤲</span>
+                    </div>
+                    <p class="text-dark-charcoal/90">
+                        Overextends to help others without setting defined expectations or clear boundaries.
+                    </p>
+                    <div class="p-2.5 rounded bg-white/80 border border-coral-dust/30 space-y-1">
+                        <span class="font-mono text-[10px] font-bold text-coral-rose uppercase block">Fisherman Analogy:</span>
+                        <p class="text-[11px] italic">Gives a fish for free with unspoken strings attached.</p>
+                        <span class="font-mono text-[10px] font-bold text-deep-sea uppercase block pt-1">Hidden Payoff:</span>
+                        <p class="text-[11px]">Feels indispensable and morally required while sacrificing self-care.</p>
+                    </div>
+                </div>
+
+                <!-- Sufferer -->
+                <div class="p-4 rounded-xl bg-ocean-tint/50 border border-jade-water/20 space-y-2">
+                    <div class="flex items-center justify-between">
+                        <span class="font-mono text-reef-dark font-bold text-sm">2. Sufferer</span>
+                        <span class="text-lg">🌧️</span>
+                    </div>
+                    <p class="text-dark-charcoal/90">
+                        Feels at a total loss and taken advantage of when unrequested generosity is not reciprocated.
+                    </p>
+                    <div class="p-2.5 rounded bg-white/80 border border-coral-dust/30 space-y-1">
+                        <span class="font-mono text-[10px] font-bold text-coral-rose uppercase block">Emotional Trap:</span>
+                        <p class="text-[11px] italic">Absolves self of personal agency and boundaries.</p>
+                        <span class="font-mono text-[10px] font-bold text-deep-sea uppercase block pt-1">Hidden Payoff:</span>
+                        <p class="text-[11px]">Avoids accountability if things fail; receives praise without risking rejection.</p>
+                    </div>
+                </div>
+
+                <!-- Persecutor -->
+                <div class="p-4 rounded-xl bg-ocean-tint/50 border border-jade-water/20 space-y-2">
+                    <div class="flex items-center justify-between">
+                        <span class="font-mono text-reef-dark font-bold text-sm">3. Persecutor</span>
+                        <span class="text-lg">🌩️</span>
+                    </div>
+                    <p class="text-dark-charcoal/90">
+                        Accuses the recipient of wrongdoing for failing to meet expectations that were never communicated.
+                    </p>
+                    <div class="p-2.5 rounded bg-white/80 border border-coral-dust/30 space-y-1">
+                        <span class="font-mono text-[10px] font-bold text-coral-rose uppercase block">Relational Damage:</span>
+                        <p class="text-[11px] italic">Blames, guilt-trips, and judges character.</p>
+                        <span class="font-mono text-[10px] font-bold text-deep-sea uppercase block pt-1">Hidden Payoff:</span>
+                        <p class="text-[11px]">Embodies moral superiority and self-righteous justification.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SECTION 2: RELATING LADY OF SUCCESS TO EMPOWERMENT -->
+        <section id="empowerment" class="story-card space-y-6 scroll-mt-24 border-l-4 border-l-jade-water">
+            <div class="border-b border-jade-water/20 pb-2 flex items-center justify-between">
+                <div>
+                    <span class="text-xs font-mono uppercase tracking-wider text-jade-water">Part II • The Shift</span>
+                    <h2 class="secondary-heading text-2xl">Relating Lady of Success to Empowerment</h2>
+                </div>
+                <span class="px-2.5 py-1 rounded-full bg-jade-water/20 text-reef-dark text-xs font-mono font-medium">
+                    Direct &amp; Sovereign
+                </span>
+            </div>
+
+            <p class="text-sm text-dark-charcoal leading-relaxed">
+                The <em>Lady of Success</em> reclaims sovereignty by converting reactive patterns into conscious, empowering dynamics. Click each shift card below to view the inner transformation:
+            </p>
+
+            <!-- Interactive Archetype Shift Cards -->
+            <div class="space-y-3">
+                
+                <!-- Shift Card 1 -->
+                <div class="p-4 rounded-xl bg-light-cream/60 border border-jade-water/30 hover:border-jade-water transition cursor-pointer" onclick="toggleShiftDetails('shift1')">
+                    <div class="flex items-center justify-between text-sm">
+                        <div class="flex items-center gap-2">
+                            <span class="px-2 py-0.5 rounded bg-coral-dust/30 text-coral-rose font-mono text-xs font-bold">Rescuer</span>
+                            <span class="text-reef-dark font-bold">➔</span>
+                            <span class="px-2 py-0.5 rounded bg-jade-water/30 text-reef-dark font-mono text-xs font-bold">The Coach</span>
+                        </div>
+                        <span id="shift1-icon" class="text-xs font-mono text-jade-water">Expand +</span>
+                    </div>
+                    <div id="shift1" class="hidden pt-3 mt-2 border-t border-jade-water/20 text-xs text-dark-charcoal space-y-1.5">
+                        <p class="font-medium text-reef-dark">Offers support as an equal without overstepping, controlling, or fixing.</p>
+                        <p class="text-dark-charcoal/90">
+                            <strong>Fisherman Trade Knowledge:</strong> Instead of handing out fish with hidden expectations, the Coach shares trade skills and invites collaboration, preserving autonomy for both sides.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Shift Card 2 -->
+                <div class="p-4 rounded-xl bg-light-cream/60 border border-jade-water/30 hover:border-jade-water transition cursor-pointer" onclick="toggleShiftDetails('shift2')">
+                    <div class="flex items-center justify-between text-sm">
+                        <div class="flex items-center gap-2">
+                            <span class="px-2 py-0.5 rounded bg-coral-dust/30 text-coral-rose font-mono text-xs font-bold">Victim</span>
+                            <span class="text-reef-dark font-bold">➔</span>
+                            <span class="px-2 py-0.5 rounded bg-jade-water/30 text-reef-dark font-mono text-xs font-bold">The Creator</span>
+                        </div>
+                        <span id="shift2-icon" class="text-xs font-mono text-jade-water">Expand +</span>
+                    </div>
+                    <div id="shift2" class="hidden pt-3 mt-2 border-t border-jade-water/20 text-xs text-dark-charcoal space-y-1.5">
+                        <p class="font-medium text-reef-dark">Sovereign ownership of decision-making, responses, boundaries, and next steps.</p>
+                        <p class="text-dark-charcoal/90">
+                            <strong>Vulnerable to Growth:</strong> Accepts temporary setbacks or failure not as proof of inadequacy, but as an essential learning feedback loop to refine future choices.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Shift Card 3 -->
+                <div class="p-4 rounded-xl bg-light-cream/60 border border-jade-water/30 hover:border-jade-water transition cursor-pointer" onclick="toggleShiftDetails('shift3')">
+                    <div class="flex items-center justify-between text-sm">
+                        <div class="flex items-center gap-2">
+                            <span class="px-2 py-0.5 rounded bg-coral-dust/30 text-coral-rose font-mono text-xs font-bold">Persecutor</span>
+                            <span class="text-reef-dark font-bold">➔</span>
+                            <span class="px-2 py-0.5 rounded bg-jade-water/30 text-reef-dark font-mono text-xs font-bold">The Challenger</span>
+                        </div>
+                        <span id="shift3-icon" class="text-xs font-mono text-jade-water">Expand +</span>
+                    </div>
+                    <div id="shift3" class="hidden pt-3 mt-2 border-t border-jade-water/20 text-xs text-dark-charcoal space-y-1.5">
+                        <p class="font-medium text-reef-dark">Provides truth and clarity as a catalyst for growth and empowerment.</p>
+                        <p class="text-dark-charcoal/90">
+                            <strong>High Standards &amp; Respect:</strong> Sets firm boundaries with warmth, avoiding accusations while holding others capable of problem-solving.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SECTION 3: LADY OF SUCCESS CHEAT CODE (COMMUNICATION) -->
+        <section id="cheat-codes" class="story-card space-y-6 scroll-mt-24 border-l-4 border-l-coral-rose">
+            <div class="border-b border-jade-water/20 pb-2 flex items-center justify-between">
+                <div>
+                    <span class="text-xs font-mono uppercase tracking-wider text-coral-rose">Part III • Practical Application</span>
+                    <h2 class="secondary-heading text-2xl">Lady of Success Cheat Code</h2>
+                </div>
+                <span class="px-2.5 py-1 rounded-full bg-sandlight text-reef-dark text-xs font-mono font-medium">
+                    Mutually Empowering
+                </span>
+            </div>
+
+            <!-- Guidance & No-No's Columns -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs">
+                
+                <!-- Guidance Rules -->
+                <div class="p-4 rounded-xl bg-ocean-tint/60 border border-jade-water/30 space-y-3">
+                    <h3 class="font-mono text-reef-dark font-bold text-sm flex items-center gap-1.5">
+                        <span class="text-emerald-600">✓</span> Grounded Guidance Rules
+                    </h3>
+                    <ul class="space-y-2 text-dark-charcoal/90">
+                        <li class="flex items-start gap-2">
+                            <span class="text-jade-water">•</span>
+                            <span><strong>Acknowledge Emotion Warmly:</strong> Mirror confusion, overwhelm, or frustration with grounded empathy.</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-jade-water">•</span>
+                            <span><strong>Validate Feelings, Not False Premises:</strong> Honor emotional experiences without agreeing to untrue assumptions.</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-jade-water">•</span>
+                            <span><strong>Shared Puzzles:</strong> Frame challenges as collaborative puzzles rather than personal failures.</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-jade-water">•</span>
+                            <span><strong>Forward-Vision Standards:</strong> When setting boundaries, state the desired future expectation positively and directly.</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-jade-water">•</span>
+                            <span><strong>Factual Observations:</strong> Replace evaluations ("This is a mess") with concrete facts ("We have two steps remaining").</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- No-No's -->
+                <div class="p-4 rounded-xl bg-coral-dust/10 border border-coral-dust/40 space-y-3">
+                    <h3 class="font-mono text-coral-rose font-bold text-sm flex items-center gap-1.5">
+                        <span class="text-coral-rose">✕</span> Patterns to Eliminate
+                    </h3>
+                    <ul class="space-y-2 text-dark-charcoal/90">
+                        <li class="flex items-start gap-2">
+                            <span class="text-coral-rose">•</span>
+                            <span><strong>Never Compromise Truth:</strong> Never sacrifice factual accuracy or boundaries just to sound "nice."</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-coral-rose">•</span>
+                            <span><strong>Zero Subtle Aggression:</strong> Strip out blame, guilt-tripping, sarcasm, character judgments, and absolutes ("always/never").</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-coral-rose">•</span>
+                            <span><strong>Zero Retroactive Critique:</strong> Do not cite past missteps or grievances to justify a new standard.</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-coral-rose">•</span>
+                            <span><strong>No Corporate Jargon:</strong> Eliminate terms like "bandwidth", "synergy", or "deliverables."</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-coral-rose">•</span>
+                            <span><strong>No Therapy-Speak:</strong> Avoid clinical phrasing like "holding space" or "dysregulated."</span>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- INTERACTIVE COMMUNICATION REFRAME GENERATOR -->
+            <div class="mt-6 pt-4 border-t border-jade-water/20 space-y-3">
+                <div class="flex items-center justify-between">
+                    <h3 class="font-mono text-reef-dark font-bold text-xs uppercase tracking-wider">
+                        Interactive Reframe Practice
+                    </h3>
+                    <span class="text-[11px] text-jade-water font-mono">Select a scenario to view reframe</span>
+                </div>
+
+                <!-- Scenario Tabs -->
+                <div class="flex flex-wrap gap-2 text-xs font-mono">
+                    <button onclick="showScenario(1)" id="btn-sc1" class="sc-btn px-3 py-1.5 rounded-lg bg-coral-rose text-white transition">
+                        1. Overextended Scope
+                    </button>
+                    <button onclick="showScenario(2)" id="btn-sc2" class="sc-btn px-3 py-1.5 rounded-lg bg-sandlight text-reef-dark hover:bg-coral-dust/30 transition">
+                        2. Unreciprocated Generosity
+                    </button>
+                    <button onclick="showScenario(3)" id="btn-sc3" class="sc-btn px-3 py-1.5 rounded-lg bg-sandlight text-reef-dark hover:bg-coral-dust/30 transition">
+                        3. Setting Project Expectations
+                    </button>
+                </div>
+
+                <!-- Scenario Display Cards -->
+                <div id="scenario-card" class="p-4 rounded-xl bg-white border border-jade-water/30 space-y-3 text-xs">
+                    <!-- Dynamic Scenario Content Inserted via JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 4: RESOURCES & FURTHER STUDY -->
+        <section id="resources" class="story-card space-y-4 scroll-mt-24">
+            <div class="border-b border-jade-water/20 pb-2">
+                <span class="text-xs font-mono uppercase tracking-wider text-jade-water">Part IV • Foundation</span>
+                <h2 class="secondary-heading text-2xl">Resources &amp; Further Study</h2>
+            </div>
+
+            <p class="text-sm text-dark-charcoal">
+                The framework for <em>Lady of Success</em> synthesizes wisdom from psychology, communication systems, and ancient ethics:
+            </p>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
+                
+                <div class="p-3.5 rounded-lg bg-ocean-tint/40 border border-jade-water/20 space-y-1">
+                    <h3 class="font-bold text-reef-dark">Karpman Drama Triangle (1968)</h3>
+                    <p class="text-dark-charcoal/80">Dr. Stephen Karpman's model analyzing dynamic social roles: Rescuer, Victim, and Persecutor.</p>
+                </div>
+
+                <div class="p-3.5 rounded-lg bg-ocean-tint/40 border border-jade-water/20 space-y-1">
+                    <h3 class="font-bold text-reef-dark">The Empowered Dynamic (TED)</h3>
+                    <p class="text-dark-charcoal/80">David Emerald's constructive alternative framing roles as Coach, Creator, and Challenger.</p>
+                </div>
+
+                <div class="p-3.5 rounded-lg bg-ocean-tint/40 border border-jade-water/20 space-y-1">
+                    <h3 class="font-bold text-reef-dark">Carl Jung: Study of The Shadow</h3>
+                    <p class="text-dark-charcoal/80">Exploring unconscious projections and integrating hidden payoffs into conscious awareness.</p>
+                </div>
+
+                <div class="p-3.5 rounded-lg bg-ocean-tint/40 border border-jade-water/20 space-y-1">
+                    <h3 class="font-bold text-reef-dark">Non-Violent Communication (NVC) &amp; Ahimsa</h3>
+                    <p class="text-dark-charcoal/80">Marshall Rosenberg's needs-based communication paired with Buddhist principles of non-harming speech.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SECTION 5: CREATIVE COMMONS & ATTRIBUTIONS (TASL) -->
+        <section class="story-card bg-ocean-tint/30 text-xs space-y-3">
+            <h3 class="font-mono text-reef-dark font-bold text-xs uppercase tracking-wider border-b border-jade-water/20 pb-1">
+                Creative Commons Media &amp; TASL Attributions
+            </h3>
+            
+            <div class="space-y-2 text-dark-charcoal/80 font-mono text-[11px]">
+                <div>
+                    <span class="font-bold text-reef-dark">Contribution 1:</span> 
+                    <em>"She Rises"</em> by Katheryn Bush is marked with 
+                    <a href="https://creativecommons.org/publicdomain/zero/1.0/" target="_blank" class="text-coral-rose hover:underline">CC0 1.0 Universal</a>. 
+                    Source: <a href="https://flic.kr/p/2sJzMZn" target="_blank" class="text-jade-water hover:underline">Flickr Repository</a>.
+                </div>
+                <div>
+                    <span class="font-bold text-reef-dark">Contribution 2:</span> 
+                    Underwater Sea Turtle Photo by <a href="https://unsplash.com/@jeremybishop" target="_blank" class="text-coral-rose hover:underline">Jeremy Bishop</a> on Unsplash.
+                </div>
+                <div>
+                    <span class="font-bold text-reef-dark">Course Reference:</span> 
+                    Created for AME 111: Intro to Digital Culture (Dr. Jennifer Weiler), Arizona State University School of Arts, Media and Engineering.
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="border-t border-jade-water/20 py-6 text-center text-xs font-mono text-jade-water bg-light-cream">
+        <p>&copy; <span id="year">2026</span> Katheryn Kelly • <a href="https://www.katherynkelly.com" class="hover:text-coral-rose transition-colors">KatherynKelly.com</a></p>
+    </footer>
+
+    <!-- INTERACTIVE JAVASCRIPT LOGIC -->
+    <script>
+        // Set dynamic current year
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Archetype Shift Details Toggle
+        function toggleShiftDetails(id) {
+            const el = document.getElementById(id);
+            const icon = document.getElementById(id + '-icon');
+            if (el.classList.contains('hidden')) {
+                el.classList.remove('hidden');
+                icon.textContent = 'Collapse -';
+            } else {
+                el.classList.add('hidden');
+                icon.textContent = 'Expand +';
+            }
+        }
+
+        // Scenario Reframe Data
+        const scenarios = {
+            1: {
+                title: "Scenario 1: Handling Overextended Project Work",
+                damsel: "Damsel Trap: 'I'm always the one fixing everything while nobody else steps up. I guess I'll just finish it alone again.' (Passive-aggressive, martyrdom, uncommunicated expectations).",
+                lady: "Lady of Success Reframe: 'I notice we have two main sections left to complete before tomorrow. I can take section A. How would it feel for you to handle section B?'",
+                rule: "Applied Rule: Factual Observation + Autonomy-Preserving Request + Zero Guilt."
+            },
+            2: {
+                title: "Scenario 2: Unreciprocated Support or Generosity",
+                damsel: "Damsel Trap: 'After everything I did for you, you couldn't even bother to help me out today.' (Persecutor accusation, moral superiority).",
+                lady: "Lady of Success Reframe: 'I felt overwhelmed this afternoon trying to finish on time. In the future, I'd love to check in before taking on extra tasks so we both feel clear on the plan.'",
+                rule: "Applied Rule: Forward-Vision Standard + Clear Boundaries without retroactive critique."
+            },
+            3: {
+                title: "Scenario 3: Setting Clear Expectations on Deadlines",
+                damsel: "Damsel Trap: 'You're always ignoring deadlines and ruining our workflow.' (Absolute judgment, character attack).",
+                lady: "Lady of Success Reframe: 'The final draft isn't in the shared folder yet. Let's make sure you have the clarity you need to complete your section by 4:00 PM.'",
+                rule: "Applied Rule: Concrete Facts ('draft isn't in folder') + Coaching Stance + Shared Goal."
+            }
+        };
+
+        function showScenario(num) {
+            const container = document.getElementById('scenario-card');
+            const data = scenarios[num];
+
+            // Update button styling
+            document.querySelectorAll('.sc-btn').forEach((btn, idx) => {
+                if (idx + 1 === num) {
+                    btn.className = "sc-btn px-3 py-1.5 rounded-lg bg-coral-rose text-white transition";
+                } else {
+                    btn.className = "sc-btn px-3 py-1.5 rounded-lg bg-sandlight text-reef-dark hover:bg-coral-dust/30 transition";
+                }
+            });
+
+            // Render Card Content
+            container.innerHTML = `
+                <h4 class="font-bold text-reef-dark text-xs font-mono">${data.title}</h4>
+                <div class="p-2.5 rounded bg-coral-dust/20 border border-coral-dust/40 text-coral-rose">
+                    ${data.damsel}
+                </div>
+                <div class="p-2.5 rounded bg-ocean-tint border border-jade-water/40 text-reef-dark">
+                    <span class="font-bold font-mono text-emerald-700 block mb-1">✓ Lady of Success Reframe:</span>
+                    "${data.lady.replace('Lady of Success Reframe: ', '')}"
+                </div>
+                <div class="text-[11px] font-mono text-jade-water">
+                    💡 ${data.rule}
+                </div>
+            `;
+        }
+
+        // Initialize default scenario
+        showScenario(1);
+    </script>
+
+</body>
+</html>
